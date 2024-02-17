@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../Card/Card";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 
@@ -14,6 +14,10 @@ function Playlist({ videoData }) {
     setUpdatedVideos(items)
 
   };
+
+  useEffect(() => {
+    setUpdatedVideos(videoData);
+  }, [videoData]);
 
   return (
     <div>

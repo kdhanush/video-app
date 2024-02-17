@@ -11,7 +11,7 @@ function Home() {
 
   const handleSearch = (value) => {
     const filteredData = data.videos.filter((item) => {
-      return value.toLowerCase() === '' ? true : item.title.toLowerCase().includes(value.toLowerCase());
+      return value.toLowerCase() === '' ? item : item.title.toLowerCase().includes(value.toLowerCase());
     });
     setVideos(filteredData);
   };
