@@ -1,28 +1,37 @@
 import React from 'react'
 import { useSearchParams } from 'react-router-dom'
+import Card from '../Card/Card';
 
 function VideoPlayer({videoData}) {
   let [searchParams]  = useSearchParams();
-  const selectedId = searchParams.get('id') || 1
+  const selectedId = searchParams.get('id') || "1"
 
-  const selected = videoData.filter((item) => {
+  const [selected] = videoData?.filter((item) => {
     return item.id == selectedId
   })
 
   return (
     <>
-     <div className='video-container md:w-[1000px] md:h-[600px] 2xl:w-[1200px] '>
-      <h1>Video Player</h1>
-      <video className='w-full h-full object-cover'  
-      src={selected[0]?.sources}
-      poster={selected[0]?.thumb}
+     <div className='video-container sm:h-[400px] w-auto xl:w-3/4 md:h-[600px] 2xl:w-[1200px] '>
+      <video className='bg-stone-950 w-full h-full md:object-cover'  
+      src={selected?.sources}
+      poster={selected?.thumb}
       // height={600}
       // width={800}
       controls
       autoPlay
+      muted
       >
 
       </video>
+      <div className='mt-5'>
+        <Card 
+        customClassName={''}
+        customTitleClass={'text-xl'}
+        title={selected?.title}
+        description={selected?.description}
+        />
+      </div>
       </div>
     </>
   )
