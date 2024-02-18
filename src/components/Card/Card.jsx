@@ -15,7 +15,7 @@ function Card ({id, image, title, subtitle, description, customClassName, custom
     <div className='flex flex-col'>
     {title && <p className={`${customTitleClass} text-base`}>{title}</p>}
     {subtitle && <p className=' text-sm text-zinc-400'>{subtitle}</p>}
-    <p className=' text-sm text-zinc-500 pt-4 px-2 max-h-52 overflow-auto'>{description}</p>
+    <p className=' text-sm text-zinc-500 mt-4 px-2 max-h-52 overflow-auto'>{description}</p>
     </div>
     </div>
     </Link>

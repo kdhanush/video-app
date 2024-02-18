@@ -24,7 +24,7 @@ function Playlist({ videoData }) {
           <Droppable droppableId="videos">
             {(provided) => (
               <div
-                className="flex flex-col h-[40dvh] lg:h-[750px] mt-2 mb-2 overflow-y-scroll gap-4 w-[40dvh]"
+                className="flex flex-col h-[40dvh] lg:h-[750px] mt-2 mb-2 overflow-y-scroll gap-4 lg:w-[40dvh]"
                 {...provided.droppableProps}
                 ref={provided.innerRef}
               >
@@ -53,7 +53,7 @@ function Playlist({ videoData }) {
           </Droppable>
         </DragDropContext>
       ) : (
-        <div className="flex flex-col h-[40dvh] lg:h-[750px] mt-2 mb-2 overflow-y-scroll gap-4 items-center w-[40dvh]">
+        <div className="flex flex-col h-[40dvh] lg:h-[750px] mt-2 mb-2 overflow-y-scroll gap-4 items-center lg:w-[40dvh]">
           <Card customClassName={"mt-5"} title={"No videos found"} />
         </div>
       )}
