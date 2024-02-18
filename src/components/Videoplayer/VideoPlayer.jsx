@@ -12,12 +12,10 @@ function VideoPlayer({videoData}) {
 
   return (
     <>
-     <div className='video-container h-[50dvh] w-auto lg:w-3/4 2xl:w-[1200px] '>
+     <div className='video-container h-[50dvh] w-auto 2xl:w-[1200px] '>
       <video className='bg-stone-950 w-full h-[200px] sm:h-[350px] lg:h-[500px] md:object-cover'  
       src={selected?.sources}
       poster={selected?.thumb}
-      // height={600}
-      // width={800}
       controls
       autoPlay
       muted
