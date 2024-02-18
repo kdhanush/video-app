@@ -12,8 +12,8 @@ function VideoPlayer({videoData}) {
 
   return (
     <>
-     <div className='video-container sm:h-[400px] w-auto xl:w-3/4 md:h-[600px] 2xl:w-[1200px] '>
-      <video className='bg-stone-950 w-full h-full md:object-cover'  
+     <div className='video-container w-auto lg:w-3/4 2xl:w-[1200px] '>
+      <video className='bg-stone-950 w-full h-[200px] sm:h-[350px] lg:h-[500px] md:object-cover'  
       src={selected?.sources}
       poster={selected?.thumb}
       // height={600}

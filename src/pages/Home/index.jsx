@@ -17,18 +17,18 @@ function Home() {
   };
 
   return (
-    <>
-      <Navbar />
-      <div className=" w-full pt-4 px-2 lg:p-8 gap-4 flex flex-col sm:flex-col lg:flex-row lg:gap-8">
-        <VideoPlayer videoData={videos} />
-        <div>
-        <Search 
+    <div className="flex flex-col h-dvh overflow-hidden fixed m-4">
+    <Navbar />
+    <Search 
         onSearch = {handleSearch}
         />
+      <div className=" w-full h-full mt-2 pt-4 px-2 lg:p-8 gap-4 flex flex-col sm:flex-col lg:flex-row lg:gap-8">
+        <VideoPlayer videoData={videos} />
+        <div>
         <Playlist videoData={videos} />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
