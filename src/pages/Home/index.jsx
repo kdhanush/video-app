@@ -17,12 +17,12 @@ function Home() {
   };
 
   return (
-    <div className="flex flex-col h-dvh overflow-hidden fixed m-4">
+    <div className="flex flex-col absolute m-4">
     <Navbar />
     <Search 
         onSearch = {handleSearch}
         />
-      <div className=" w-full h-full mt-2 pt-4 px-2 lg:p-8 gap-4 flex flex-col sm:flex-col lg:flex-row lg:gap-8">
+      <div className=" w-full h-[90dvh] overflow-hidden mt-2 pt-4 px-2 lg:p-8 gap-4 flex flex-col sm:flex-col lg:flex-row lg:gap-8">
         <VideoPlayer videoData={videos} />
         <div>
         <Playlist videoData={videos} />

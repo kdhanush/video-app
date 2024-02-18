@@ -22,7 +22,7 @@ function Search(props) {
   return (
     <div className=" relative h-4 m-4 w-full lg:w-[40%] mt-0 mb-4 xl:mb-0 mx-auto">
       <input
-        className="appearance-none bg-stone-950 border border-zinc-500 outline-none text-sm text-zinc-400 rounded-lg w-full h-10 p-1"
+        className="appearance-none text-base bg-stone-950 border border-zinc-500 outline-none text-zinc-400 rounded-lg w-full h-10 p-1"
         type={"search"}s
         name="search"
         placeholder={placeHolderText}

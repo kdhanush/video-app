@@ -25,7 +25,7 @@ function Playlist({ videoData }) {
         <Droppable droppableId="videos">
           {(provided) => (
             <div
-              className="flex flex-col items-stretch h-[300px] lg:h-[750px] mt-2 mb-2 overflow-auto gap-4 p-5"
+              className="flex flex-col h-[40dvh] lg:h-[750px] mt-2 mb-2 overflow-y-scroll gap-4 p-4"
               {...provided.droppableProps}
               ref={provided.innerRef}
             >
