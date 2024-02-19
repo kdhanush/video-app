@@ -58,4 +58,15 @@ The project is deployed on
 ```bash
   https://app-videoapp.vercel.app/
 ```
+## Deployed ScreenShots
+<img width="1723" alt="Screenshot 2024-02-18 at 3 48 46 PM" src="https://github.com/kdhanush/video-app/assets/68646795/b6c40169-2f02-4a00-9981-467abba3f3d0">
+<img width="1430" alt="image" src="https://github.com/kdhanush/video-app/assets/68646795/1e32fcc3-a6ee-422a-b351-3045d0b53f1c">
+
+## LightHouse
+
+<img width="1728" alt="image" src="https://github.com/kdhanush/video-app/assets/68646795/d644d00a-9ab9-4126-9537-e4cd3ef51ea2">
+
+
+
+
 
